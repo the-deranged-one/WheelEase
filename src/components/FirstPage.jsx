@@ -4,7 +4,7 @@ import { Emergency, User, Vector2,EMPLOYEE, NURSE, MayIHelpYou, Doctor } from '.
 const FirstPage = () => {
   return (
     <>
-        <main className='bg-customGreen'> 
+        <main className='bg-customGreen w-screen'> 
             <div className='w-full h-16'>
                <h1 className='text-3xl text-center font-bold'>Select your option</h1>
             </div>

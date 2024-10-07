@@ -25,7 +25,7 @@ const Login = () => {
 
     // Handle changes in the input field
     const handleInputChange = (e) => {
-        const newValue = e.target.value; // Get the current input value
+        const newValue = e.target.value.replace(/[^0-9]/g, ''); // Only allow digits
         setPhoneNumber(newValue); // Update the state
         validatePhoneNumber(newValue); // Validate the new input value
     };
@@ -34,13 +34,12 @@ const Login = () => {
         e.preventDefault();
         // Optionally handle form submission here
         console.log("Phone Number:", phoneNumber);
-        
     };
 
     return (
         <>
-            <main className='bg-customGreen'>
-                <div className='flex h-24 justify-start items-center px-8 bg-customGreen'>
+            <main className='bg-customGreen w-screen h-screen'>
+                <div className='flex h-24 justify-start items-center px-8 bg-customGreen lg:justify-center'>
                     <h1 className='text-3xl font-bold'>
                         <span className='border-b-[6px] border-black py-2'>Log</span> in
                     </h1>
@@ -51,14 +50,14 @@ const Login = () => {
 
                 <div className='w-full h-80 mt-8'>
                     <form onSubmit={handleLogin}>
-                        <div className='flex justify-evenly'>
-                            <label className='border-b-2 border-black'>Ph No:</label>
+                        <div className='flex justify-evenly lg:justify-center'>
+                            <label className='border-b-2 border-black lg:mr-8'>Ph No:</label>
                             <input
                                 type="tel"
                                 value={phoneNumber}
                                 onChange={handleInputChange} // Use the new handler
                                 required
-                                className='bg-customGreen border-b-2 border-black py-1'
+                                className='bg-customGreen border-b-2 border-black py-1 lg:ml-8 px-3 focus:outline-none focus:border-green-500'
                             />
                             {isValid && (
                                 <div className="icon-container">
@@ -67,13 +66,13 @@ const Login = () => {
                             )}
                         </div>
 
-                        <div className='w-full h-16 flex justify-center items-center'>
+                        <div className='w-full h-16 flex justify-center items-center lg:mt-10'>
                             <p className=''>Login with your phone number</p>
                         </div>
 
                         {error && <p className="text-red-600 px-10 text-center">{error}</p>}
 
-                        <div className='flex justify-center items-center mt-16 md:mt-24 h-16'>
+                        <div className='flex justify-center items-center mt-10 h-16'>
                             <button type='submit' className="bg-teal-500 text-white text-lg md:text-xl font-bold rounded-full hover:bg-teal-600 cursor-pointer py-3 px-8 md:py-5 md:px-10">
                                 Log in
                             </button>
