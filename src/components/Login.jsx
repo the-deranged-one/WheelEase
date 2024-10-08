@@ -51,17 +51,23 @@ const Login = () => {
                 <div className='w-full h-80 mt-8'>
                     <form onSubmit={handleLogin}>
                         <div className='flex justify-evenly lg:justify-center'>
-                            <label className='border-b-2 border-black lg:mr-8'>Ph No:</label>
+                            <label className='border-b-2 border-black lg:mr-8 flex items-center'>
+                                <i className="ri-phone-fill" style={{ fontSize: '24px', color: "green" }}>
+                                </i>
+                            </label>
                             <input
                                 type="tel"
                                 value={phoneNumber}
                                 onChange={handleInputChange} // Use the new handler
                                 required
                                 className='bg-customGreen border-b-2 border-black py-1 lg:ml-8 px-3 focus:outline-none focus:border-green-500'
+                                placeholder='Enter mob no.'
+
                             />
                             {isValid && (
                                 <div className="icon-container">
-                                    <i className="ri-checkbox-circle-fill" style={{ color: 'green', fontSize: '24px' }}></i>
+                                    <i className="ri-checkbox-circle-fill" style={{ color: 'green', fontSize: '24px' }}>
+                                    </i>
                                 </div>
                             )}
                         </div>
