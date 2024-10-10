@@ -22,3 +22,12 @@ export { Doctor};
 import Vector2 from './Vector2.png'
 export {Vector2}
 
+import Chatbot from './Chatbot.png'
+export {Chatbot}
+
+import Ambulance from './Ambulance.png'
+export {Ambulance}
+
+import Wchair from './Wchair.png'
+export {Wchair}
+

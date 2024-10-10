@@ -9,8 +9,9 @@ const Welcome = () => {
                     <h1 className='text-3xl md:text-4xl mb-2'>Welcome to</h1>
                     <h1 className='text-4xl md:text-5xl font-bold'>WheelEase</h1>
                 </div>
-                <div className='mt-8 md:mt-12 flex justify-center'>
-                    <img src={Wheelchair} alt="wheelchair" className='h-48 md:h-72' />
+
+                <div className='mt-8 md:mt-12 flex justify-center '>
+                    <img src={Wheelchair} alt="wheelchair" className='sm:w-full md:h-72 lg:w-72' />
                 </div>
 
                 <div className='flex justify-center mt-16 md:mt-24'>
