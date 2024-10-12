@@ -52,7 +52,7 @@ const Login = () => {
                     <form onSubmit={handleLogin}>
                         <div className='flex justify-evenly lg:justify-center'>
                             <label className='border-b-2 border-black lg:mr-8 flex items-center'>
-                                <i className="ri-phone-fill" style={{ fontSize: '24px', color: "green" }}>
+                                <i className="ri-phone-fill" style={{ fontSize: '24px'}}>
                                 </i>
                             </label>
                             <input
