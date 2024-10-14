@@ -7,6 +7,7 @@ import Emergency from './components/Emergency'
 import Employee from './components/Employee'
 import Nurse from './components/Nurse'
 import Doctor from './components/Doctor'
+import Verification from './components/Verification'
 
 function App() {
   return (
@@ -19,9 +20,8 @@ function App() {
       <Employee/>
       <Nurse/>
       <Doctor/>
+      <Verification/>
 
-      
-      
     </>
   )
 }

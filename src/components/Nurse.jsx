@@ -19,11 +19,11 @@ const Nurse = () => {
                 <div className='w-full h-4 bg-bar mt-1'></div>
 
                 <div className='w-full h-80 mt-8'>
-                    <form onSubmit>
+                    <form >
 
                         <div className='flex justify-evenly lg:justify-center'>
                             <label className='border-b-2 border-black lg:mr-8 flex items-center'>
-                            <i class="ri-user-fill" style={{ fontSize: '24px', color: '' }}>:</i>
+                            <i className="ri-user-fill" style={{ fontSize: '24px', color: '' }}>:</i>
                                 
                             </label>
                             <input
