@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import Welcome from './components/Welcome'
 import FirstPage from './components/FirstPage'
 import Login from './components/Login'
@@ -11,19 +12,20 @@ import Verification from './components/Verification'
 
 function App() {
   return (
-    <>
-      <Welcome/>
-      <FirstPage/>
-      <Login/>
-      <Signup/>
-      <Emergency/>
-      <Employee/>
-      <Nurse/>
-      <Doctor/>
-      <Verification/>
-
-    </>
-  )
+    <Router> {/* This wraps the app with Router functionality */}
+      <Routes> {/* Define the routes */}
+        <Route path="/" element={<Welcome />} />         {/* Default Route */}
+        <Route path="/firstpage" element={<FirstPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/emergency" element={<Emergency />} />
+        <Route path="/employee" element={<Employee />} />
+        <Route path="/nurse" element={<Nurse />} />
+        <Route path="/doctor" element={<Doctor />} />
+        <Route path="/verification" element={<Verification />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App

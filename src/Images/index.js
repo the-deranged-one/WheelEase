@@ -1,5 +1,5 @@
-import Wheelchair from './Wheelchair.png' 
-export { Wheelchair }; 
+import logo from './logo.png' 
+export { logo}; 
 
 import Emergency from './Emergency.png' 
 export { Emergency }; 
@@ -28,6 +28,16 @@ export {Chatbot}
 import Ambulance from './Ambulance.png'
 export {Ambulance}
 
-import Wchair from './Wchair.png'
-export {Wchair}
+import Wheelchair from './Wheelchair.png'
+export {Wheelchair}
 
+import Stretcher from './Stretcher.png'
+export {Stretcher}
+
+import Google from './Google.png'
+export {Google}
+import Apple from './Apple.png'
+export {Apple}
+
+import Facebook from './Facebook.png'
+export {Facebook}

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Wheelchair } from '../Images';
+import { logo } from '../Images';
+import { Link } from 'react-router-dom'; 
 
 const Welcome = () => {
     return (
@@ -11,13 +12,16 @@ const Welcome = () => {
                 </div>
 
                 <div className='mt-8 md:mt-12 flex justify-center '>
-                    <img src={Wheelchair} alt="wheelchair" className='sm:w-full md:h-72 lg:w-72' />
+                    <img src={logo} alt="wheelchair" className='sm:w-full md:h-72 lg:w-72' />
                 </div>
 
                 <div className='flex justify-center mt-16 md:mt-24'>
+                    <Link to="/FirstPage">
                     <button className="bg-teal-500 text-white text-lg md:text-xl font-bold rounded-full hover:bg-teal-600 cursor-pointer py-3 px-8 md:py-5 md:px-10">
                         Get Started
                     </button>
+                    </Link>
+                    
                 </div>
             </main>
         </>
