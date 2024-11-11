@@ -91,7 +91,7 @@ const Login = () => {
 
                         <div className='flex justify-center items-center mt-10 h-16'>
                             {isValid && (
-                                <Link to='/welcome'>
+                                <Link to='/user'>
                                     <button type='submit' className="bg-teal-500 text-white text-lg md:text-xl font-bold rounded-full hover:bg-teal-600 cursor-pointer py-3 px-8 md:py-5 md:px-10">
                                         Log in
                                     </button>

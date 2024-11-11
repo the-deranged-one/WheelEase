@@ -41,3 +41,24 @@ export {Apple}
 
 import Facebook from './Facebook.png'
 export {Facebook}
+
+import Tick from './Tick.png'
+export {Tick}
+
+import UserImg from './UserImg.png'
+export {UserImg}
+
+import Hospital1 from './Hospital1.png'
+export {Hospital1}
+
+import Hospital2 from './Hospital2.png'
+export {Hospital2}
+
+import Hospital3 from './Hospital3.png'
+export {Hospital3}
+
+import Hospital4 from './Hospital4.png'
+export {Hospital4}
+
+import Advertisement from './Advertisement.png'
+export {Advertisement}
