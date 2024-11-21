@@ -31,8 +31,8 @@ export {Ambulance}
 import Wheelchair from './Wheelchair.png'
 export {Wheelchair}
 
-import Stretcher from './Stretcher.png'
-export {Stretcher}
+import StretcherImg from './StretcherImg.png'
+export {StretcherImg}
 
 import Google from './Google.png'
 export {Google}
@@ -62,3 +62,18 @@ export {Hospital4}
 
 import Advertisement from './Advertisement.png'
 export {Advertisement}
+
+
+import Floor1Img from './Floor1Img.png'
+export {Floor1Img}
+
+import Floor2Img from './Floor2Img.png'
+export {Floor2Img}
+import Floor3Img from './Floor3Img.png'
+export {Floor3Img}
+
+import FloorGImg from './FloorGImg.png'
+export {FloorGImg}
+
+import FloorBImg from './FloorBImg.png'
+export {FloorBImg}

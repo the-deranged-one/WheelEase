@@ -1,5 +1,5 @@
 import React from 'react'
-import { Ambulance, Chatbot, Vector2, Wheelchair, Stretcher } from '../Images'
+import { Ambulance, Chatbot, Vector2, Wheelchair, StretcherImg } from '../Images'
 import { Link } from 'react-router-dom'
 
 const Emergency = () => {
@@ -41,7 +41,7 @@ const Emergency = () => {
                     </Link>
 
                     <Link to='/stretcher'>
-                        <img src={Stretcher} alt="wheelchair" />
+                        <img src={StretcherImg} alt="wheelchair" />
                     </Link>
                 </div>
 

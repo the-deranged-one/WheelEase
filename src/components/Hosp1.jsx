@@ -1,5 +1,5 @@
 import React from 'react'
-import { Advertisement, Chatbot, Stretcher, UserImg, Vector2, Wheelchair } from '../Images'
+import { Advertisement, Chatbot, StretcherImg, UserImg, Vector2, Wheelchair } from '../Images'
 import { Link } from 'react-router-dom'
 
 function Hosp1() {
@@ -50,12 +50,12 @@ function Hosp1() {
             </div>
 
             <div className='flex justify-evenly py-3 lg:justify-center' >
-                <Link to='/'>
+                <Link to='/wheelchair'>
                     <img src={Wheelchair} alt="" className='w-44 h-44 lg:mx-5' />
                 </Link>
 
-                <Link to='/'>
-                    <img src={Stretcher} alt="" className='w-44 h-44' />
+                <Link to='/stretcher'>
+                    <img src={StretcherImg} alt="" className='w-44 h-44' />
                 </Link>
             </div>
 

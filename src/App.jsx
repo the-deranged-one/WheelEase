@@ -12,6 +12,10 @@ import Verification from './components/Verification'
 import Confirm from './components/Confirm';
 import User from './components/User';
 import Hosp1 from './components/Hosp1';
+import Hosp2 from './components/Hosp2';
+import Hosp3 from './components/Hosp3';
+import Hosp4 from './components/Hosp4';
+import Stretcher from './components/Stretcher';
 
 function App() {
   return (
@@ -29,8 +33,10 @@ function App() {
         <Route path="/verification" element={<Verification />} />
         <Route path="/user" element={<User />} />
         <Route path="/hosp1" element={<Hosp1 />} />
-      
-
+        <Route path="/hosp2" element={<Hosp2 />} />
+        <Route path="/hosp3" element={<Hosp3 />} />
+        <Route path="/hosp4" element={<Hosp4 />} />
+        <Route path="/stretcher" element={<Stretcher/>} />
 
       </Routes>
     </Router>

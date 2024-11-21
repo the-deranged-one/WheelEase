@@ -43,17 +43,17 @@ function User() {
                         <img src={Hospital1} alt="" className='w-44 h-44 lg:mx-5' />
                     </Link>
 
-                    <Link to='/'>
+                    <Link to='/hosp2'>
                         <img src={Hospital2} alt="" className='w-44 h-44' />
                     </Link>
                 </div>
 
                 <div className='flex justify-evenly py-5 lg:justify-center' >
-                    <Link to='/'>
+                    <Link to='/hosp3'>
                         <img src={Hospital3} alt="" className='w-44 h-44 lg:mx-5' />
                     </Link>
 
-                    <Link to='/'>
+                    <Link to='/hosp4'>
                         <img src={Hospital4} alt="" className='w-44 h-44' />
                     </Link>
                 </div>

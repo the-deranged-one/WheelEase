@@ -1,4 +1,6 @@
 import React from 'react'
+import { Advertisement, Chatbot, StretcherImg, UserImg, Vector2, Wheelchair } from '../Images'
+import { Link } from 'react-router-dom'
 
 function Hosp2() {
   return (
@@ -30,7 +32,7 @@ function Hosp2() {
                 <img src={UserImg} alt="userimage" />
                 <div>
                   <h1 className='text-3xl  ml-4 font-bold'>Hello Reya,</h1>
-                  <p className='text-center text-xl ml-4'>Welcome to hospital 1</p>
+                  <p className='text-center text-xl ml-4'>Welcome to hospital 2</p>
                 </div>
                 
             </div>
@@ -47,12 +49,12 @@ function Hosp2() {
             </div>
 
             <div className='flex justify-evenly py-3 lg:justify-center' >
-                <Link to='/'>
+                <Link to='/wheelchair'>
                     <img src={Wheelchair} alt="" className='w-44 h-44 lg:mx-5' />
                 </Link>
 
-                <Link to='/'>
-                    <img src={Stretcher} alt="" className='w-44 h-44' />
+                <Link to='/stretcher'>
+                    <img src={StretcherImg} alt="" className='w-44 h-44' />
                 </Link>
             </div>
 
