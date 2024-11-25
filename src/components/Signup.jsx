@@ -73,7 +73,13 @@ const Signup = () => {
         <>
             <main className='bg-customGreen w-screen h-screen'>
 
-                <div className='flex h-24 justify-start items-center px-8 bg-customGreen lg:justify-center'>
+                <div className='flex h-24 justify-start items-center px-4 bg-customGreen lg:justify-center'>
+
+                    <div className='mr-3'>
+                        <Link to='/firstpage'>
+                            <i className="ri-arrow-left-line text-4xl cursor-pointer"></i>
+                        </Link>
+                    </div>
                     <Link to='/login'>
                         <h3 className='text-xl font-medium text-gray-800 '>Log in</h3>
                     </Link>

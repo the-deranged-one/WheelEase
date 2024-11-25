@@ -41,7 +41,15 @@ const Login = () => {
     return (
         <>
             <main className='bg-customGreen w-screen h-screen'>
-                <div className='flex h-24 justify-start items-center px-8 bg-customGreen lg:justify-center'>
+
+                <div className='flex h-24 justify-start items-center px-4 bg-customGreen lg:justify-center'>
+
+                    <div className='mr-3'>
+                        <Link to='/firstpage'>
+                            <i className="ri-arrow-left-line text-4xl cursor-pointer"></i>
+                        </Link>
+                    </div>
+
                     <h1 className='text-3xl font-medium'>
                         <span className='border-b-[6px] border-black py-2 rounded-sm'>Log</span> in
                     </h1>
@@ -106,9 +114,9 @@ const Login = () => {
                     <p className='text-center font-bold'>Or Connect</p>
                 </div>
                 <div className='flex justify-center items-center mt-2'>
-                    <img className='h-12 mx-2'src={Google} alt="Google" />
+                    <img className='h-12 mx-2' src={Google} alt="Google" />
                     <img className='h-12 mx-2' src={Apple} alt="Apple " />
-                    <img className='h-11 mx-2'src={Facebook} alt="Facebook" />
+                    <img className='h-11 mx-2' src={Facebook} alt="Facebook" />
                 </div>
             </main>
         </>

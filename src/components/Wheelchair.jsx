@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Chatbot, StretcherImg, FloorBImg, FloorGImg, Floor1Img, Floor2Img, Floor3Img } from '../Images'; // Import guiding map images
+import { Chatbot, FloorBImg, FloorGImg, Floor1Img, Floor2Img, Floor3Img, WheelchairImg, WheelchairAssistedImg } from '../Images';
 import { Link } from 'react-router-dom';
 
-function Stretcher() {
+function Wheelchair() {
     const [selectedFloor, setSelectedFloor] = useState(null); // State to track the selected floor
     const floors = ["B", "G", "1", "2", "3"]; // Floor labels
 
@@ -29,7 +29,7 @@ function Stretcher() {
 
                     {/* Title in the Center */}
                     <h1 className="text-3xl font-bold">
-                        <span className="border-b-4 border-black rounded-sm">ST</span>RETCHER
+                        <span className="border-b-4 border-black rounded-sm">WH</span>EELCHAIR
                     </h1>
 
                     {/* Chatbot Icon on the Right */}
@@ -67,7 +67,11 @@ function Stretcher() {
 
                 {/* Stretcher Image */}
                 <h1 className='text-2xl px-4 font-bold mt-6'>Available</h1>
-                <img src={StretcherImg} alt="stretcher" className='mx-auto mt-4 shadow-md' />
+                <div className='flex px-3'>
+
+                    <img src={WheelchairImg} alt="wheelchair" className='mx-auto mt-4 shadow-md' />
+                    <img src={WheelchairAssistedImg} alt="wheelchair" className='mx-auto mt-4 shadow-md'/>
+                </div>
 
                 {/* Guiding Map */}
                 <h1 className='text-2xl px-4 font-bold mt-6'>Guiding Map</h1>
@@ -82,7 +86,7 @@ function Stretcher() {
                 )}
             </main>
         </>
-    );
+    )
 }
 
-export default Stretcher;
+export default Wheelchair

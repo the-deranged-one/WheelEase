@@ -28,8 +28,6 @@ export {Chatbot}
 import Ambulance from './Ambulance.png'
 export {Ambulance}
 
-import Wheelchair from './Wheelchair.png'
-export {Wheelchair}
 
 import StretcherImg from './StretcherImg.png'
 export {StretcherImg}
@@ -77,3 +75,9 @@ export {FloorGImg}
 
 import FloorBImg from './FloorBImg.png'
 export {FloorBImg}
+
+import WheelchairImg from './WheelchairImg.png';
+export {WheelchairImg}
+
+import WheelchairAssistedImg from './WheelchairAssistedImg.png';
+export {WheelchairAssistedImg}

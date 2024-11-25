@@ -1,5 +1,5 @@
 import React from 'react'
-import { Ambulance, Chatbot, Vector2, Wheelchair, StretcherImg } from '../Images'
+import { Ambulance, Chatbot, Vector2, WheelchairImg, StretcherImg } from '../Images'
 import { Link } from 'react-router-dom'
 
 const Emergency = () => {
@@ -37,7 +37,7 @@ const Emergency = () => {
                 </div>
                 <div className='flex justify-around p-6 items-center'>
                     <Link to='/wheelchair'>
-                        <img src={Wheelchair} alt="wheelchair" />
+                        <img src={WheelchairImg} alt="wheelchair" />
                     </Link>
 
                     <Link to='/stretcher'>

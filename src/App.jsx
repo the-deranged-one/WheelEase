@@ -16,6 +16,7 @@ import Hosp2 from './components/Hosp2';
 import Hosp3 from './components/Hosp3';
 import Hosp4 from './components/Hosp4';
 import Stretcher from './components/Stretcher';
+import Wheelchair from './components/Wheelchair';
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
         <Route path="/hosp3" element={<Hosp3 />} />
         <Route path="/hosp4" element={<Hosp4 />} />
         <Route path="/stretcher" element={<Stretcher/>} />
+        <Route path="/wheelchair" element={<Wheelchair/>} />
+
 
       </Routes>
     </Router>
