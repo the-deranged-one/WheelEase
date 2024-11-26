@@ -1,8 +1,21 @@
 import React from 'react'
-import { Advertisement, Chatbot, StretcherImg, UserImg, Vector2, WheelchairImg } from '../Images'
+import { Advertisement,Advertisement2,Advertisement3, Chatbot, StretcherImg, UserImg, Vector2, WheelchairImg } from '../Images'
 import { Link } from 'react-router-dom'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 function Hosp2() {
+  const settings = {
+    dots: false,           // Disable pagination dots for smoothness
+    infinite: true,        // Enable infinite scrolling
+    speed: 9000,           // Match speed with autoplaySpeed for slow motion
+    slidesToShow: 1,       // Show one slide at a time
+    slidesToScroll: 1,     // Scroll one slide at a time
+    autoplay: true,        // Enable autoplay
+    autoplaySpeed: 0,      // No delay between autoplay triggers
+    cssEase: "linear",     // Use a linear transition for smoothness
+  };
   return (
     <>
         <main className="bg-customGreen w-screen min-h-screen overflow-hidden">
@@ -41,7 +54,17 @@ function Hosp2() {
               <h1 className='text-2xl font-bold'>Advertisement</h1>
             </div>
             <div>
-              <img src={Advertisement} alt="advertisement" />
+            <Slider {...settings}>
+                        <div>
+                            <img src={Advertisement} alt="Advertisement 1" className="w-full rounded-lg" />
+                        </div>
+                        <div>
+                            <img src={Advertisement2} alt="Advertisement 2" className="w-full rounded-lg" />
+                        </div>
+                        <div>
+                            <img src={Advertisement3} alt="Advertisement 3" className="w-full rounded-lg" />
+                        </div>
+                    </Slider>
             </div>
 
             <div className='h-16 flex items-center px-4'> 

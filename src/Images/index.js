@@ -61,6 +61,12 @@ export {Hospital4}
 import Advertisement from './Advertisement.png'
 export {Advertisement}
 
+import Advertisement2 from './Advertisement2.png'
+export {Advertisement2}
+
+import Advertisement3 from './Advertisement3.png'
+export {Advertisement3}
+
 
 import Floor1Img from './Floor1Img.png'
 export {Floor1Img}
